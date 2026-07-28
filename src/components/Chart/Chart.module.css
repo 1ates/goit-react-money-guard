@@ -1,0 +1,41 @@
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+  min-height: 220px;
+}
+
+.empty {
+  min-height: 220px;
+}
+
+.canvas-wrapper {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.empty-text {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .chart {
+    min-height: 320px;
+    padding: 8px 0;
+  }
+
+  .canvas-wrapper {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .canvas-wrapper {
+    max-width: 320px;
+  }
+}

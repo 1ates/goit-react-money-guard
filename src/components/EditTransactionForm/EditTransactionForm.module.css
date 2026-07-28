@@ -1,0 +1,202 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 4px;
+}
+
+.type-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.type-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.type-label-income {
+  color: var(--color-accent);
+}
+
+.type-label-expense {
+  color: #ff6500;
+}
+
+.category-label {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 16px;
+  transition: border-color var(--transition-default);
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: var(--color-input-text);
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: var(--color-accent);
+}
+
+.input-error {
+  border-bottom-color: var(--color-danger);
+}
+
+.input-comment {
+  padding-left: 32px;
+}
+
+.field-icon {
+  position: absolute;
+  left: 6px;
+  top: 13px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.datepicker-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.datepicker {
+  padding-right: 32px !important;
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 8px;
+  top: 13px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.calendar.react-datepicker {
+  background: var(--color-surface) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+}
+
+.calendar .react-datepicker__header {
+  background: var(--color-surface-alt) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.calendar .react-datepicker__current-month,
+.calendar .react-datepicker__day-name {
+  color: var(--color-text) !important;
+}
+
+.calendar .react-datepicker__day {
+  color: var(--color-text) !important;
+  border-radius: 50% !important;
+}
+
+.calendar .react-datepicker__day:hover {
+  background: rgba(36, 204, 167, 0.3) !important;
+}
+
+.calendar .react-datepicker__day--selected,
+.calendar .react-datepicker__day--keyboard-selected {
+  background: var(--color-accent) !important;
+  color: #000 !important;
+}
+
+.calendar .react-datepicker__day--disabled {
+  color: var(--color-text-muted) !important;
+}
+
+.error {
+  color: var(--color-danger);
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary-gradient);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition:
+    opacity var(--transition-default),
+    transform var(--transition-default);
+}
+
+.submit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cancel {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background var(--transition-default);
+}
+
+.cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+}

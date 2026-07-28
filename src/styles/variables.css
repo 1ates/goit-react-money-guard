@@ -1,0 +1,28 @@
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Circe", sans-serif;
+  --color-background: #101225;
+  --color-surface: #1f1d3a;
+  --color-surface-alt: #2c2b52;
+  --color-text: #fbfbfb;
+  --color-text-muted: rgba(255, 255, 255, 0.6);
+  --color-accent: #24cca7;
+  --color-income: #24cca7;
+  --color-expense: #ff6596;
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-accent-secondary: #623f8b;
+  --color-danger: #ff868d;
+  --color-warning: #ffb627;
+  --color-primary-gradient: linear-gradient(97deg, #ff868d 0%, #ffb627 61%, #7000df 91%);
+  --color-border: rgba(255, 255, 255, 0.4);
+  --color-input-text: rgba(255, 255, 255, 0.7);
+  --shadow-soft: 0 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow-glass: 0 4px 60px rgba(0, 0, 0, 0.25);
+  --bg-glass: rgba(255, 255, 255, 0.1);
+  --backdrop-blur-glass: blur(50px);
+  --radius-card: 24px;
+  --radius-pill: 999px;
+  --container-width: 1280px;
+  --transition-default: 250ms ease;
+}

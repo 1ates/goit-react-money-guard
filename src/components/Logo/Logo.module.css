@@ -1,0 +1,32 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.icon {
+  display: block;
+  width: 28px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.text {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.vertical .text {
+  font-size: 26px;
+}

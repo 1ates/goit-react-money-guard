@@ -1,0 +1,121 @@
+.statistics {
+  background: var(--bg-glass);
+  backdrop-filter: var(--backdrop-blur-glass);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+.empty-table {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  text-align: center;
+  padding: 32px 20px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.color {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.name {
+  flex: 1;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.total {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.total-row-expense {
+  color: var(--color-danger);
+}
+
+.total-row-income {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .statistics {
+    border-radius: 24px;
+  }
+
+  .header,
+  .row,
+  .totals {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .list {
+    max-height: 360px;
+  }
+}

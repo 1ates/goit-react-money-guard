@@ -1,0 +1,45 @@
+.header {
+  padding: 16px 0;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(100% - 40px, var(--container-width));
+  margin: auto;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 18px;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  min-width: 52px;
+  min-height: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.logout-btn:hover {
+  color: var(--color-text);
+}

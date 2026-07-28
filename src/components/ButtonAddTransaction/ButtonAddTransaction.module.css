@@ -1,0 +1,38 @@
+.add-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 32px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-secondary) 100%);
+  box-shadow: 0 8px 24px rgba(36, 204, 167, 0.45);
+  cursor: pointer;
+  transition:
+    transform var(--transition-default),
+    box-shadow var(--transition-default);
+  z-index: 100;
+}
+
+.add-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(36, 204, 167, 0.6);
+}
+
+.add-btn:active {
+  transform: scale(0.96);
+}
+
+@media (min-width: 768px) {
+  .add-btn {
+    right: 40px;
+    bottom: 40px;
+    width: 56px;
+    height: 56px;
+  }
+}
