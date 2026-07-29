@@ -41,7 +41,7 @@ const globalSlice = createSlice({
       state.editingTransaction = action.payload ?? null;
     },
     closeEditTransactionModal(state) {
-      state.isEditTransactionModalOpen = true;
+      state.isEditTransactionModalOpen = false;
       state.editingTransaction = null;
     },
     openMobileMenu(state) {

@@ -4,7 +4,7 @@ import { selectEditingTransaction, selectIsEditTransactionModalOpen } from "../.
 import { closeEditTransactionModal } from "../../store/global/globalSlice.js";
 import EditTransactionForm from "../EditTransactionForm/EditTransactionForm.jsx";
 import Icon from "../Icon/Icon.jsx";
-import "./ModalEditTransaction.module.css";
+import css from "./ModalEditTransaction.module.css";
 
 export default function ModalEditTransaction() {
   const dispatch = useDispatch();
@@ -28,15 +28,15 @@ export default function ModalEditTransaction() {
 
   return (
     <div
-      className='modal'
+      className={css.modal}
       role='dialog'
       aria-modal='true'
       aria-label='Edit transaction'
       onClick={() => dispatch(closeEditTransactionModal())}
     >
-      <div className='card' onClick={(e) => e.stopPropagation()}>
+      <div className={css.card} onClick={(e) => e.stopPropagation()}>
         <button
-          className='close'
+          className={css.close}
           type='button'
           aria-label='Close modal'
           onClick={() => dispatch(closeEditTransactionModal())}

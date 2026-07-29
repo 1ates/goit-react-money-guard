@@ -19,7 +19,7 @@ const statisticsSlice = createSlice({
     setSelectedMonth(state, action) {
       state.selectedMonth = action.payload;
     },
-    selectedYear(state, action) {
+    setSelectedYear(state, action) {
       state.selectedYear = action.payload;
     },
   },
