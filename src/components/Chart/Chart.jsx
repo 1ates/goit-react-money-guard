@@ -27,7 +27,7 @@ const options = {
     legend: { display: false },
     tooltip: {
       callbacks: {
-        label: (ctx) => ` ${ctx.label}: ${Number(ctx.parsed).toFixed(2)} UAH`,
+        label: (ctx) => ` ${ctx.label}: ${Number(ctx.parsed).toFixed(2)} $`,
       },
     },
   },
